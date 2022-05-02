@@ -1,0 +1,88 @@
+/* font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+/* menu */
+
+@keyframes blink {
+    0% {
+        color: rgb(68, 55, 55)
+    }
+
+    49% {
+        color: rgb(68, 55, 55)
+    }
+
+    50% {
+        color: rgb(194, 163, 163)
+    }
+
+    51% {
+        color:rgb(68, 55, 55)
+    }
+
+    100% {
+        color: rgb(68, 55, 55)
+    }
+}
+
+.burger {
+    color: rgb(68, 55, 55);
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.blink {
+    animation: blink 15s linear infinite;
+}
+
+.blink:hover {
+    animation: none;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -15%;
+    padding-top: 100px;
+    flex-direction: column;
+    height: 100vh;
+    width: 15%;
+    align-items: center;
+    gap: 4rem;
+    background-color: rgb(93, 62, 62);
+    list-style: none;
+}
+
+li button {
+    color: rgb(194, 163, 163);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+li button:hover {
+    color: rgb(68, 55, 55);
+}
+
+i:hover {
+    color: #ddd;
+}
+
+.hide {
+    display: none;
+}
