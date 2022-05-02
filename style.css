@@ -41,29 +41,31 @@ body {
     border: none;
     font-size: 2.4rem;
     cursor: pointer;
+    transition: transform .3s;
 }
 
 .blink {
-    animation: blink 15s linear infinite;
+    animation: blink 10s linear infinite;
 }
 
 .blink:hover {
     animation: none;
 }
 
-ul {
+nav ul {
     display: flex;
     position: absolute;
     top: 0;
-    left: -15%;
+    left: -15vw;
     padding-top: 100px;
     flex-direction: column;
     height: 100vh;
-    width: 15%;
+    width: 15vw;
     align-items: center;
     gap: 4rem;
     background-color: rgb(93, 62, 62);
     list-style: none;
+    transition: transform .3s;
 }
 
 li button {
@@ -85,4 +87,25 @@ i:hover {
 
 .hide {
     display: none;
+}
+
+.active {
+    transform: translateX(15vw);
+}
+
+/* 1st calculator */
+
+.calculator {
+    width: 25vw;
+    height: 70vh;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 1s;
+    transform: translate(-50%, 100%);
+}
+
+.slide {
+    transform: translate(-50%, -50%)
 }
