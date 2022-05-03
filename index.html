@@ -22,18 +22,29 @@
         <ul>
             <li><button class="home">Home</button></li>
             <li><button class="tempBtn">Farenheit to Celsius</button></li>
-            <li><button>Cennik</button></li>
+            <li><button class="calcBtn">Regular calculator</button></li>
             <li><button>Kontakt</button></li>
         </ul>
     </nav>
-    <div class="calculator">
-        <div class="result">
-            <h2 class="score"></h2>
-        </div>
-        <div class="keyboard">
+    <div class="calculator calculator1">
+        <div class="input">
+            <label for="converter">Calculate <span class="one">Celsius</span> to <span
+                    class="two">Farenheit</span></label>
+            <input type="number" id="converter" placeholder="Enter a number...">
 
+            <p class="result">Enter a number first</p>
+        </div>
+        <div class="tempBtns">
+            <button class="tempBtnX conv">Convert</button>
+            <button class="tempBtnX reset">Reset</button>
+            <button class="tempBtnX swap">Swap</button>
         </div>
     </div>
+    <div class="calculator calculator2">
+        <p>test</p>
+    </div>
+
+
 
     <script src="./script.js"></script>
 </body>
